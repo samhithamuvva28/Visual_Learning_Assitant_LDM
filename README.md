@@ -141,6 +141,3 @@ The notebooks use simple relative paths. With the current folder layout, you hav
 ## Acknowledgments
 - Stable Diffusion VAE from `runwayml/stable-diffusion-v1-5` (Hugging Face)
 - CLIP `openai/clip-vit-base-patch32`
-
----
-If you want this README updated with exact command blocks for your local paths (or converted to scripts instead of notebooks), let me know and I can adjust it accordingly.
