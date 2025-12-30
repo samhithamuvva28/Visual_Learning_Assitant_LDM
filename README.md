@@ -1,7 +1,7 @@
 # Visual Learning Assitant Framework using LDM
 
 This project builds a text-conditioned image generation pipeline for educational diagrams by:
-- Merging AI2D and ScienceQA image–caption data
+- Merging AI2D and ScienceQA image caption data
 - Computing CLIP text embeddings
 - Fine-tuning the Stable Diffusion VAE on the merged dataset
 - Training a lightweight text-conditioned UNet with a DDIM sampler on VAE latents
@@ -11,18 +11,18 @@ The repository currently uses Jupyter notebooks organized by task. No folder res
 
 ## Current layout (as-is)
 - **Merging_AI2D_ScienceQA/**
-  - `Merging_ai2d&scienceqa_Code.ipynb` — builds the unified dataset, computes CLIP embeddings, and can save `educational_diagram_data.pt`
+  - `Merging_ai2d&scienceqa_Code.ipynb` - builds the unified dataset, computes CLIP embeddings, and can save `educational_diagram_data.pt`
   - `ai2d_labeled.json`, `scienceqa_labeled.json`, `combined_dataset.jsonl`
 - **VAE/**
-  - `Final_Fine-tuned_VAE_Implementation.ipynb` — fine-tunes the VAE; evaluates; extracts latents
-  - `best_fine_tuned_vae.pth` — fine-tuned VAE weights (large)
-  - `latent_dataset/latent_dataset/latent_text_data.pt` — latents and text embeddings (note nested folder)
+  - `Final_Fine-tuned_VAE_Implementation.ipynb` - fine-tunes the VAE; evaluates; extracts latents
+  - `best_fine_tuned_vae.pth` - fine-tuned VAE weights (large)
+  - `latent_dataset/latent_dataset/latent_text_data.pt` - latents and text embeddings (note nested folder)
 - **LDM/**
-  - `Final_LDM Implementation.ipynb` — trains a text-conditioned UNet with cross-attention on 512-d CLIP embeddings, DDIM schedule, EMA
+  - `Final_LDM Implementation.ipynb` - trains a text-conditioned UNet with cross-attention on 512-d CLIP embeddings, DDIM schedule, EMA
 - **Inference/**
-  - `Inference_LDM.ipynb` — loads the fine-tuned VAE and trained UNet(+EMA), runs denoising, saves images, and computes metrics
+  - `Inference_LDM.ipynb` - loads the fine-tuned VAE and trained UNet(+EMA), runs denoising, saves images, and computes metrics
 - **Results/**
-  - `inference_results/` — generated images and progress grids
+  - `inference_results/` - generated images and progress grids
 - Other: `Base_Architecture.png`, `DATA255_Group08_Project_Report.pdf`
 
 ## Environment and prerequisites
