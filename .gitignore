@@ -1,0 +1,17 @@
+# Office/Reports (requested)
+*.pptx
+*.ppt
+*.pdf
+DATA255_Group08_Project_Report.pdf
+DATA255_Group8_Project Proposal.pptx
+DATA255_Group8_Final Project Presentation.pptx.pdf
+# Recommended ignores to keep repo lightweight
+Results/
+**/inference_results/
+outputs/
+models/
+*.pt
+*.pth
+*.ckpt
+.ipynb_checkpoints/
+__pycache__/
