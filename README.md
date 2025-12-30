@@ -1,4 +1,4 @@
-# Text-Conditioned Latent Diffusion for Educational Diagrams
+# Visual Learning Assitant Framework using LDM
 
 This project builds a text-conditioned image generation pipeline for educational diagrams by:
 - Merging AI2D and ScienceQA image–caption data
