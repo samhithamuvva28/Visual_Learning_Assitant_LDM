@@ -9,7 +9,7 @@ This project builds a text-conditioned image generation pipeline for educational
 
 The repository currently uses Jupyter notebooks organized by task. No folder restructuring is required.
 
-## Current layout (as-is)
+## Current layout
 - **Merging_AI2D_ScienceQA/**
   - `Merging_ai2d&scienceqa_Code.ipynb` - builds the unified dataset, computes CLIP embeddings, and can save `educational_diagram_data.pt`
   - `ai2d_labeled.json`, `scienceqa_labeled.json`, `combined_dataset.jsonl`
